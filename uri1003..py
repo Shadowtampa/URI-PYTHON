@@ -1,6 +1,16 @@
-A = int(input())
-B = int(input())
+#  Orientado a Objetos por Shadowtampa
+#  POO version by Shadowtampa
 
-soma = A + B
 
-print("SOMA = %d" %soma)
+class Numero:
+    valor = int()
+
+
+a = Numero()
+b = Numero()
+a.valor, b.valor = int(input()), int(input())
+result = a.valor + b.valor
+
+print('SOMA = {}'.format(result))
+
+
