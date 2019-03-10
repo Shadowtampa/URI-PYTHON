@@ -1,6 +1,16 @@
-n1 = int(input())
-n2 = int(input())
+#  Orientado a Objetos por Shadowtampa
+#  POO version by Shadowtampa
 
-produto = n1 * n2
 
-print("PROD = %d" %produto)
+class Numero:
+    valor = int()
+
+
+a = Numero()
+b = Numero()
+a.valor, b.valor = int(input()), int(input())
+result = a.valor * b.valor
+
+print('PROD = {}'.format(result))
+
+
