@@ -1,7 +1,10 @@
-raio = int(input())
+#  Orientado a Objetos por Shadowtampa
 
-pi = 3.14159
+class Esfera:
+    raio = float()
 
-volume = float(4.0 * pi * (raio* raio * raio) / 3)
 
-print("VOLUME = %0.3f" %volume)
+esfera = Esfera()
+esfera.raio = float(input())  # volume = (4/3) * pi * R3
+volume = (4/3) * 3.14159 * (esfera.raio ** 3)
+print('VOLUME = {:.3f}'.format(volume))
