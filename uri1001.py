@@ -1,7 +1,13 @@
-n1 = int(input())
+#  Orientado a Objetos por Shadowtampa
+#  POO version by Shadowtampa
 
-n2 = int(input())
 
-soma = (n1+n2)
+class Numero:
+    valor = int()
 
-print("X =" ,soma)
+
+a = Numero() 
+b = Numero()
+a.valor, b.valor = int(input()), int(input())
+result = a.valor + b.valor
+print('X = {}'.format(result))
