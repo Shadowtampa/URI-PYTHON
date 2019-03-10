@@ -1,8 +1,20 @@
-n1 = int(input())
-n2 = int(input())
-n3 = int(input())
-n4 = int(input())
+#  Orientado a Objetos por Shadowtampa
+#  POO version by Shadowtampa
 
-diferenca = (n1 * n2) - (n3 * n4)
 
-print("DIFERENCA = %d" %diferenca)
+class Numero:
+    valor = int()
+
+
+a = Numero()
+b = Numero()
+c = Numero()
+d = Numero()
+
+a.valor, b.valor, c.valor, d.valor = int(input()), int(input()), int(input()), int(input())
+
+result = a.valor * b.valor - c.valor * d.valor  # A * B - C * D
+
+print('DIFERENCA = {}'.format(result))
+
+
