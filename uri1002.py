@@ -1,5 +1,14 @@
-raio = float(input())
+#  Orientado a Objetos por Shadowtampa
+#  POO version by Shadowtampa
 
-area = (raio * raio) * 3.14159 
 
-print("A=%0.4f" %area)
+class Circulo:
+    raio = float()
+
+
+circle = Circulo()
+pi = 3.14159
+circle.raio = float(input())
+area = pi * (circle.raio ** 2)
+print('A={:.4f}'.format(area))
+
