@@ -1,21 +1,17 @@
 # ORIENTADO A OBJETOS por Shadowtampa
-class Produto:
-    ID = int(1)
-    quantidade = float()
-    valor = float()
+class peca:
+  def __init__(self, linhaEntrada):
+    self.__linhaEntrada = linhaEntrada.split(" ")
+    self.__codigo, self.__nmrPc, self.__vlrUnit = self.__linhaEntrada
+  def getCustoTotal(self):
+    return float(self.__nmrPc) * float(self.__vlrUnit)
 
+pc1 = peca(input())
+pc2 = peca(input())
 
-prod1 = Produto()
-prod2 = Produto()
-linha1 = input().split(" ")
-linha2 = input().split(" ")
+custoTotal = pc1.getCustoTotal() + pc2.getCustoTotal()
 
-prod1.ID, prod1.quantidade, prod1.valor = linha1
-prod2.ID, prod2.quantidade, prod2.valor = linha2
-total = (float(prod1.quantidade)) * (float(prod1.valor)) + (float(prod2.quantidade)) * (float(prod2.valor))
-
-
-print('VALOR A PAGAR: R$ {:.2f}'.format(total)
+print("VALOR A PAGAR: R$ %0.2f"%custoTotal)
 
 #########################################################################################################################################
 
