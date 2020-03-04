@@ -1,8 +1,15 @@
-n1 = int(input())
-n2 = int(input())
-n3 = int(input())
-n4 = int(input())
+class listaPonderada:
+  def __init__(self, valor):
+    self.__valor = valor
 
-diferenca = (n1 * n2) - (n3 * n4)
+  def getWealth(self):
+    return self.__valor
 
-print("DIFERENCA = %d" %diferenca)
+n1 = listaPonderada(int(input()))
+n2 = listaPonderada(int(input()))
+n3 = listaPonderada(int(input()))
+n4 = listaPonderada(int(input()))
+
+generalWeight = n1.getWealth() * n2.getWealth() - n3.getWealth() * n4.getWealth()
+
+print("DIFERENCA = %0.1f"%generalWeight)
